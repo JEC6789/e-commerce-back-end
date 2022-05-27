@@ -1,11 +1,11 @@
 # E-commerce Back End Starter Code
 
-route  | category | product | tag
--------|----------|---------|------
-get    | woke     | woke    | broke
-getid  | woke     | woke    | broke
-post   | woke     | woke*   | probably broke
-put    | woke     | woke*   | probably broke
-delete | woke     | broke   | probably broke
+route  | category | product  | tag
+-------|----------|----------|---------------
+get    | woke     | broke    | functional
+getid  | woke     | broke    | functional
+post   | woke     | *        | woke
+put    | woke     | *        | woke
+delete | woke     | untested | woke
 
 *starter code provided these
