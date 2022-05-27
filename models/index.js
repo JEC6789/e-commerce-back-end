@@ -3,7 +3,6 @@ const Product = require('./Product');
 const Category = require('./Category');
 const Tag = require('./Tag');
 const ProductTag = require('./ProductTag');
-const { post } = require('../routes/api/product-routes');
 
 // Products belongsTo Category
 Product.belongsTo(Category, {
@@ -33,17 +32,17 @@ ProductTag.belongsTo(Product, {
   foreignKey: "product_id"
 });
 
-/*ProductTag.belongsTo(Tag, {
+ProductTag.belongsTo(Tag, {
   foreignKey: "tag_id"
-});*/
+});
 
 Product.hasMany(ProductTag, {
   foreignKey: "product_id"
 });
 
-/*Tag.hasMany(ProductTag, {
+Tag.hasMany(ProductTag, {
   foreignKey: "tag_id"
-});*/
+});
 
 module.exports = {
   Product,
